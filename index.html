@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>How to create a link in JavaScript ?</title>
+<style>.tiktok{
+            position: relative;
+            width: 37px;
+            height: 218px;
+            margin: 100px auto;
+            z-index: 1;
+            background: #fff;
+            filter: drop-shadow(-10px -10px 0 #24f6f0) brightness(110%);
+            box-shadow: 11.6px 10px 0 0 #fe2d52;
+            top: -60px;
+        }
+        .tiktok::before {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+border: 37px solid #fff;
+border-top: 37px solid transparent;
+border-radius: 50%;
+top: 123px;
+left: -137px;
+transform: rotate(45deg);
+filter: drop-shadow(16px 0px 0 #fe2d52);
+        }
+
+        .tiktok::after{
+            content: "";
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            border: 30px solid #fff;
+            border-right: 30px solid transparent;
+            border-top: 30px solid transparent;
+            border-left: 30px solid transparent;
+            top: -100px;
+            right: -172px;
+            border-radius: 100%;
+            transform: rotate(45deg);
+            z-index: -10;
+            filter: drop-shadow(14px 0 0 #fe2d52);
+        }</style>
+</head>
+<body style = "text-align:center;">
+<h1 style = "color:black;" >
+Sas11 Skillss Building<br>
+MY TIKTOK
+</h1>
+ <div class="tiktok"></div>
+<p id = "GFG_UP" style =
+"font-size: 19px; font-weight: bold;">
+</p>
+<button onclick = "sas11()">
+click here
+</button>
+<p id = "GFG_DOWN" style =
+"color: green; font-size: 24px; font-weight: bold;">
+</p>
+<script>
+var el_up = document.getElementById("GFG_UP");
+var el_down = document.getElementById("GFG_DOWN");
+el_up.innerHTML = "Click the button to se my TikTok " + "link using JavaScript.";
+function sas11() {
+	  var a = document.createElement('a');  
+      var linkText = document.createTextNode("My TikTok Link");  
+      a.appendChild(linkText);  
+      a.title = "my title text";
+      a.href = "https://www.tiktok.com/@lorenzogelo0?fbclid=IwAR1hG0jCkbnqCgYdIfqMtAiQgLnCsptDMIeWO8EHOO_wvJ9aeDebr5Rtiic";  
+      document.body.appendChild(a);
+}
+</script>
+</body>
+</html>
